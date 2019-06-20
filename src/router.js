@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Subscribe from './views/Subscribe.vue'
 import Course from './views/Course.vue'
+import Courses from './views/Courses.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,9 @@ export default new Router({
       path: '/course',
       component: Course,
     },
-
+    {
+      path: '/courses',
+      component: Courses,
+    }
   ]
 })

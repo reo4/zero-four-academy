@@ -1,7 +1,7 @@
 <template>
    <div class="bg-cover-1 text-white">
-      <div class="container pt-10 mb-56">
-         <div class="flex justify-between items-center mb-20">
+      <div class="container pt-10 mb-24">
+         <div class="flex justify-between items-center">
             <img class="w-32" src="@/assets/logo.png">
             <div>
                <a href="#" class="pr-2 mr-2 border-r-2 border-white">
@@ -17,7 +17,7 @@
       <div class="header__bottom flex-center pb-20">
          <span class="separator mb-3" :class="'bg-'+badgeColor"></span>
          <span :class="'bottom_heading-' + headingSize">{{bottomHeading}}</span>
-         <span class="subheading mt-6">
+         <span class="subheading mt-6 container">
             <slot name="bottom-details"></slot>
          </span>
       </div>
@@ -47,6 +47,8 @@ export default {
          rgba(0, 0, 0, 0.98)
       ),
       url(../assets/welcome-img.png);
+   background-position: center;
+   background-size: cover;
 }
 .header__bottom {
    background: linear-gradient(#00000000, #151516);

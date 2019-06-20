@@ -2,7 +2,7 @@
    <div class="wrapper text-white">
       <Header bottom-heading="our courses">
          <template slot="header-body">
-            <div class="flex-center">
+            <div class="flex-center my-24">
                <span class="text-6xl font-light">one subscription for all courses</span>
                <span class="text-6xl mb-10">
                   <span class="line-through text-red">$1,550</span> only for $39,99
