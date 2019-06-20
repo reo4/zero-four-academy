@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="122" viewBox="0 0 480 122">
+  <g id="Group_738" data-name="Group 738" transform="translate(-731 -8581)">
+    <path id="Rectangle_53" data-name="Rectangle 53" d="M44,0H474a0,0,0,0,1,0,0V88a0,0,0,0,1,0,0H44A44,44,0,0,1,0,44v0A44,44,0,0,1,44,0Z" transform="translate(731 8593)" fill="#77b15c"/>
+    <path id="Path_71" data-name="Path 71" d="M8642.911,645l15.583-11.919V645Z" transform="translate(-7519.409 7948)" fill="#acacac"/>
+    <text id="Subscribe_Now" data-name="Subscribe Now" transform="translate(787 8653)" fill="#fff" font-size="43" font-family="Lato-Regular, Lato"><tspan x="0" y="0">Subscribe Now</tspan></text>
+    <path id="Path_72" data-name="Path 72" d="M0,0H72V122L34.843,85.151,0,122Z" transform="translate(1139 8581)" fill="#fff"/>
+    <text id="_97_" data-name="97%" transform="translate(1155 8614)" fill="#75ae5a" font-size="21" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="0" y="0">97%</tspan></text>
+    <text id="OFF" transform="translate(1146 8648)" fill="#75ae5a" font-size="30" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="0" y="0">OFF</tspan></text>
+    <g id="ic_keyboard_arrow_right_24px" transform="translate(1075.582 8629.25)">
+      <path id="Path_49" data-name="Path 49" d="M8.59,17.524l5.092-5.1L8.59,7.318,10.158,5.75l6.671,6.671-6.671,6.671Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

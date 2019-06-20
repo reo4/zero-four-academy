@@ -1,0 +1,39 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cairo&display=swap");
+
+@tailwind base;
+
+body {
+   @apply font-sans;
+}
+
+@tailwind components;
+
+.flex-center {
+   @apply flex flex-col items-center text-center;
+}
+
+.title {
+   @apply text-6xl text-white;
+}
+
+.subtitle {
+   @apply text-3xl;
+}
+
+.subheading {
+   @apply text-2xl font-light text-grey-light;
+}
+
+.divider {
+   @apply bg-grey-light pt-.25 w-5/6 mx-auto;
+}
+.separator {
+   @apply w-40 p-1 rounded;
+}
+.btn {
+   @apply px-10 py-1 text-white text-3xl;
+}
+
+@tailwind utilities;

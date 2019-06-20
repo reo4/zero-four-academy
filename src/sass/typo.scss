@@ -1,0 +1,11 @@
+.typo-1 {
+	color: $grey-light;
+}
+.typo-1-light {
+	color: lighten($grey-light , 30%);
+}
+.typo-2{
+	color: white;
+	font-size: 2rem;
+	font-weight: bold;
+}
