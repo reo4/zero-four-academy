@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Subscribe from './views/Subscribe.vue'
-import Course from './views/Course.vue'
-import Courses from './views/Courses.vue'
 
 Vue.use(Router)
 
@@ -17,15 +14,15 @@ export default new Router({
     },
     {
       path: '/subscribe',
-      component: Subscribe,
+      component: () => import('./views/Subscribe.vue'),
     },
     {
       path: '/course',
-      component: Course,
+      component: () => import('./views/Course.vue'),
     },
     {
       path: '/courses',
-      component: Courses,
+      component: () => import('./views/Courses.vue'),
     }
   ]
 })

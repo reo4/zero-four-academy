@@ -1,5 +1,5 @@
 <template>
-   <div class="-mx-6">
+   <div class="-mx-6 pb-16">
       <ul class="flex flex-wrap children:w-1/3 xl:children:w-1/2 md:children:w-full">
          <li class="mb-12 px-4" v-for="i in 6" :key="i">
             <div class="header">

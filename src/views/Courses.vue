@@ -7,8 +7,9 @@
       </Header>
       <div class="bg-grey-dark py-20 px-20 xl:px-6">
          <Cards></Cards>
-         <Offer></Offer>
+         <Offer hide-title add-line></Offer>
          <Cards></Cards>
+         <Offer></Offer>
       </div>
       <Footer/>
    </div>
