@@ -17,25 +17,25 @@ module.exports = {
       padding: 24
     },
     extend: {
+	    colors: {
+	      'white': '#ffffff',
+	      red: '#ff0000',
+	      grey: {
+	        light: '#959595',
+	        normal: '#262626',
+	        balanced: '#8F8F8F',
+	        '500': '#272728',
+	        '600': '#575757',
+	        '700': '#E9E9E9',
+	        '800': '#565656',
+	        dark: '#151516'
+	      },
+	      lactic: '#46cfec',
+	      green: '#00ffa0',
+	      'green-offer': '#77B15C'
+	    },
       fontFamily: {
         'sans': ['Lato', 'Roboto', 'Cairo']
-      },
-      colors: {
-        red: '#ff0000',
-        grey: {
-          light: '#959595',
-          normal: '#262626',
-          balanced: '#8F8F8F',
-          '500': '#272728',
-          '600': '#575757',
-          '700': '#E9E9E9',
-          '800': '#565656',
-          dark: '#151516'
-        },
-        lactic: '#46cfec',
-        green: '#00ffa0',
-        'green-offer': '#77B15C'
-
       },
       margin: additionaUnits,
       padding: additionaUnits,

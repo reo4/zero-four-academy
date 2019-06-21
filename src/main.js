@@ -5,7 +5,6 @@ import store from './store'
 
 import "./sass/main.scss"
 import "./tailwindcss.css"
-// import '../node_modules/slick-carousel/slick/slick.css';
 
 Vue.config.productionTip = false
 

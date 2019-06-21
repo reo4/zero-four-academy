@@ -6,7 +6,7 @@
          heading-size="small"
       >
          <template slot="bottom-details">
-            <CourseDetails></CourseDetails>
+            <CourseDetails center></CourseDetails>
          </template>
       </Header>
       <div class="container mt-20">

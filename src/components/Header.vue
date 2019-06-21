@@ -15,7 +15,7 @@
          <slot name="header-body"></slot>
       </div>
       <div class="header__bottom flex-center pb-20">
-         <span class="separator mb-3" :class="'bg-'+badgeColor"></span>
+         <span class="separator mb-3" :class="'bg-'+ badgeColor"></span>
          <span :class="'bottom_heading-' + headingSize">{{bottomHeading}}</span>
          <span class="subheading mt-6 container">
             <slot name="bottom-details"></slot>
