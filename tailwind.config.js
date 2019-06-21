@@ -51,10 +51,10 @@ module.exports = {
       'lg': { 'max': '1024px' },
       'md': { 'max': '768px' },
       'sm': { 'max': '640px' },
-      'o-xl': { 'max': '1280px', 'min': '1024px' },
-      'o-lg': { 'max': '1024px', 'min': '768px' },
-      'o-md': { 'max': '768px', 'min': '640px' },
-      'o-sm': { 'max': '640px', },
+      // 'o-xl': { 'max': '1280px', 'min': '1024px' },
+      // 'o-lg': { 'max': '1024px', 'min': '768px' },
+      // 'o-md': { 'max': '768px', 'min': '640px' },
+      // 'o-sm': { 'max': '640px', },
     }
   },
   variants: {
