@@ -32,16 +32,16 @@
          <div class="relative flex items-center justify-center mb-40">
             <div class="divider absolute"></div>
             <div class="flex items-center z-20">
-               <a href="#" class="w-32 mr-10">
+               <a href="#" class="w-20 lg:w-32 mr-5 lg:mr-20">
                   <img src="@/assets/benefits/1.svg">
                </a>
-               <a href="#" class="w-40 mr-10">
+               <a href="#" class="w-24 lg:w-40 mr-5 lg:mr-20">
                   <img src="@/assets/benefits/2.svg">
                </a>
-               <a href="#" class="w-32 mr-10">
+               <a href="#" class="w-20 lg:w-32 mr-5 lg:mr-20">
                   <img src="@/assets/benefits/3.svg">
                </a>
-               <a href="#" class="w-32 mr-10">
+               <a href="#" class="w-20 lg:w-32 mr-5 lg:mr-20">
                   <img src="@/assets/benefits/4.svg">
                </a>
             </div>

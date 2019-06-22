@@ -22,10 +22,14 @@
 	transition: all 2s;
 }
 .slick-slide:not(.slick-center) a {
-	transition: all 2s;
 	opacity: .2;
 }
 
+@media (max-width: 1280px) {
+	.slick-slide a {
+		opacity: 1 !important
+	}
+}
 .plyr__progress__container{
 	width: 70% !important;
 }
