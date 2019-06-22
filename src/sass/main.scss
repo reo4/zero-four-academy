@@ -1,8 +1,30 @@
 @import "colors";
 @import "typo";
 @import "buttons";
-@import "../../node_modules/slick-carousel/slick/slick";
 
-// p , span {
-// 	@extend .typo-1;
-// }
+
+.slick-dots {
+	margin-top: 3rem;
+	position: unset;
+}
+.slick-dots li button:before{
+	color: white;
+	font-size: 16px;
+}
+
+.slick-dots li.slick-active button:before {
+	opacity: 1;
+	color: white;
+}
+
+.slick-slide a {
+	opacity: 1;
+	transition: opacity 1s;
+}
+.slick-slide:not(.slick-center) a {
+	opacity: .2;
+}
+
+.plyr__progress__container{
+	width: 70% !important;
+}

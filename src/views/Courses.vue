@@ -5,7 +5,7 @@
             slot="bottom-details"
          >Lorem ipsum is simply dummy text of the printing and typesetting industry</template>
       </Header>
-      <div class="bg-grey-dark py-20 px-20 xl:px-6">
+      <div class="bg-grey-dark px-6 xl:p-20">
          <Cards></Cards>
          <Offer hide-title add-line></Offer>
          <Cards></Cards>

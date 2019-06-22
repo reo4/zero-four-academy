@@ -23,30 +23,27 @@
                   <li v-for="(chapter , i) in chapters" class="mb-10" :key="i">
                      <a
                         href="#"
-                        class="flex items-center bg-grey-normal text-grey-balanced px-8 py-4 pr-24 lg:p-4"
+                        class="flex items-center bg-grey-normal text-grey-balanced px-8 py-4 xl:pr-24"
                         :class="chapter.opened ? 'text-2xl' : ['text-lg' , 'text-grey-800']"
                         @click.prevent="open(chapter)"
                      >
-                        <i class="fa mr-5" :class="chapter.opened ? 'fa-minus': 'fa-plus' "></i>
-                        <span class="mr-auto lg:text-lg">{{chapter.title}}</span>
+                        <i class="fa mr-5 text-lg" :class="chapter.opened ? 'fa-minus': 'fa-plus' "></i>
+                        <span class="mr-auto text-lg xl:text-xl">{{chapter.title}}</span>
                         <i class="fa fa-circle text-2xs"></i>
-                        <span
-                           class="ml-3 lg:text-base"
-                           :class="chapter.opened ? 'text-xl' : 'text-base'"
-                        >{{chapter.period}}</span>
+                        <span class="ml-3 text-base xl:text-lg">{{chapter.period}}</span>
                      </a>
-                     <ul class="first-child:mt-5 w-11/12 mx-auto" v-if="chapter.opened">
-                        <li v-for="i in 6" :key="i">
+                     <ul v-if="chapter.opened">
+                        <li v-for="i in 6" :key="i" :class="{'mt-5' : i === 1}">
                            <a
                               href="#"
-                              class="flex items-center text-grey-600 px-24 border-b py-4 border-grey-500 lg:p-2"
+                              class="flex items-center text-grey-600 p-8 pl-16 xl:pr-24 py-4 border-b border-grey-500"
                            >
                               <i class="fa fa-play-circle fa-lg mr-3"></i>
                               <span
-                                 class="text-xl mr-auto lg:text-lg"
+                                 class="mr-auto text-base xl:text-lg"
                               >introduce of leadership and responsabilities</span>
                               <i class="fa fa-circle text-2xs"></i>
-                              <span class="text-xl ml-3 lg:text-base">10mins</span>
+                              <span class="ml-3 text-base xl:text-lg">10mins</span>
                            </a>
                         </li>
                      </ul>

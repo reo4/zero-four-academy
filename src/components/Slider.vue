@@ -1,13 +1,13 @@
 <template>
    <div class="container mt-20">
-      <a href="#" class="block mx-auto text-right mb-8">
+      <a href="#" class="block mx-auto text-right mb-8 mr-10">
          <span class="text-lg">show all</span>
       </a>
       <Slick ref="slick" :options="options">
          <a
             href="#"
             v-for="(slide , i) in slides"
-            class="flex flex-col p-8 w-100 lg:w-full"
+            class="flex flex-col p-8 w-full lg:w-144 lg:mx-10"
             :class="[slide.cover]"
             :key="i"
          >
@@ -49,14 +49,20 @@ export default {
       ],
       options: {
          arrows: false,
-         slidesToShow: 2,
-         autoplay: true,
-         slidesToScroll: 2,
+         infinite: true,
+         slidesToShow: 3,
+         autoplay: false,
+         slidesToScroll: 1,
+         variableWidth: true,
+         centerMode: true,
+         waitForAnimate: false,
          responsive: [
             {
-               slidesToScroll: 1,
                breakpoint: 1024,
                settings: {
+                  centerMode:false,
+                  variableWidth: false,
+                  slidesToScroll: 1,
                   slidesToShow: 1
                }
             }
@@ -77,12 +83,12 @@ export default {
 
 <style lang="scss" scoped>
 .bg-cover-2 {
-   background-image: linear-gradient(
+   background: linear-gradient(
          to top,
          rgba(21, 21, 22, 0.95) 10%,
          rgba(0, 0, 0, 0) 100%
       ),
-      url("../assets/books.jpg");
+      url("../assets/books.jpg") center top;
 }
 .bg-cover-3 {
    background: linear-gradient(

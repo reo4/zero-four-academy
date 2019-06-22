@@ -1,7 +1,7 @@
 <template>
    <div class="-mx-6 pb-16">
-      <ul class="flex flex-wrap children:w-1/3 xl:children:w-1/2 md:children:w-full">
-         <li class="mb-12 px-4" v-for="i in 6" :key="i">
+      <ul class="flex flex-wrap">
+         <li class="mb-12 px-4 w-full lg:w-1/2 xl:w-1/3" v-for="i in 6" :key="i">
             <div class="header">
                <img src="@/assets/welcome-img.png" class="img mx-auto">
             </div>

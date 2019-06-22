@@ -5,8 +5,8 @@ const additionaUnits = {
   '80': '20rem',
   '88': '22rem',
   '96': '24rem',
-  '100': '30rem',
   '128': '32rem',
+  '144': '36rem',
   '236': '40rem'
 }
 module.exports = {
@@ -32,7 +32,8 @@ module.exports = {
 	      },
 	      lactic: '#46cfec',
 	      green: '#00ffa0',
-	      'green-offer': '#77B15C'
+	      'green-offer': '#77B15C',
+        'purple': '#754da5'
 	    },
       fontFamily: {
         'sans': ['Lato', 'Roboto', 'Cairo']
@@ -45,24 +46,6 @@ module.exports = {
         '2xs': '.5rem',
         '3xs': '.25rem',
       }
-    },
-    screens: {
-      'xl': { 'max': '1280px' },
-      'lg': { 'max': '1024px' },
-      'md': { 'max': '768px' },
-      'sm': { 'max': '640px' },
-      // 'o-xl': { 'max': '1280px', 'min': '1024px' },
-      // 'o-lg': { 'max': '1024px', 'min': '768px' },
-      // 'o-md': { 'max': '768px', 'min': '640px' },
-      // 'o-sm': { 'max': '640px', },
     }
-  },
-  variants: {
-    textColor: ['children', 'responsive', 'hover', 'focus'],
-    margin: ['children', 'first-child', 'last-child', 'responsive'],
-    width: ['children', 'first-child', 'last-child', 'responsive']
-  },
-  plugins: [
-    require('tailwindcss-children')(),
-  ]
+  }
 }

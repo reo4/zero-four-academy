@@ -14,7 +14,7 @@
             </div>
          </template>
          <template
-            slot="bottom-details"
+         slot="bottom-details"
          >Lorem ipsum is simply dummy text of the printing and typesetting industry</template>
       </Header>
       <div class="bg-grey-dark flex flex-col">
@@ -27,15 +27,9 @@
                </span>
             </button>
          </div>
-         <!-- <div class="divider mb-32"></div>
-         <div class="flex-center mb-48">
-            <div class="separator bg-green"></div>
-            <span class="title">Benefits</span>
-            <span
-               class="subheading"
-            >Lorem ipsum is simply dummy text of the printing and typesetting industry</span>
-         </div>-->
-         <!-- <div class="relative flex items-center justify-center mb-48">
+         <div class="divider mb-32"></div>
+         <SectionTitle color="green" title="Benefits"></SectionTitle>
+         <div class="relative flex items-center justify-center mb-40">
             <div class="divider absolute"></div>
             <div class="flex items-center z-20">
                <a href="#" class="w-32 mr-10">
@@ -53,30 +47,64 @@
             </div>
          </div>
          <div class="container">
-            <div class="flex justify-between md:flex-wrap lg:flex-no-wrap">
-               <div class="w-1/2 md:order-1 lg:order-none">
-                  <span class="subtitle mt-80">Lorem ipsum is simply dummy text</span>
-                  <span
-                     class="subheading inline-block mt-5"
-                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam debitis labore vero tenetur quas rerum nam distinctio repellendus, itaque eligendi praesentium, similique quia molestiae optio, autem quaerat aut architecto voluptatum suscipit at esse! Ullam dolorum quae aliquam! Nihil, tempora.</span>
-                  <button class="btn bg-green mt-12">Subscribe to unlimited courses</button>
+            <Slick :options="options">
+               <div v-for="i in 6" class="flex items-center justify-between flex-col xl:flex-row mb-10 px-10 xl:items-start">
+                  <div class="flex flex-col order-1 xl:order-none xl:w-1/2">
+                     <span class="text-2xl font-bold">Lorem ipsum is simply dummy text</span>
+                     <span class="subheading font-normal inline-block mt-5 leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam debitis labore vero tenetur quas rerum nam distinctio repellendus, itaque eligendi praesentium, similique quia molestiae optio, autem quaerat aut architecto voluptatum suscipit at esse! Ullam dolorum quae aliquam! Nihil, tempora.</span>
+                     <button class="btn bg-green py-2 mt-12 text-2xl font-bold xl:self-start">Subscribe to unlimited courses</button>
+                  </div>
+                  <img src="https://placeimg.com/480/320/any" class="mb-20 xl:mb-0">
                </div>
-               <img src="https://placeimg.com/480/320/any">
+            </Slick>
+         </div>
+         <div class="divider my-32"></div>
+         <SectionTitle color="purple" title="Simple & Fun"></SectionTitle> 
+         <div class="container mb-32">
+            <div class="flex items-center justify-between flex-col xl:flex-row mb-10 px-10 xl:items-start">
+               <div class="xl:w-1/2 mr-20">
+                  <Video></Video>
+               </div>
+               <div class="flex flex-col xl:w-1/2">
+                  <span class="text-2xl font-bold">Lorem ipsum is simply dummy text</span>
+                  <span class="subheading font-normal inline-block mt-5 leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam debitis labore vero tenetur quas rerum nam distinctio repellendus, itaque eligendi praesentium, similique quia molestiae optio, autem quaerat aut architecto voluptatum suscipit at esse! Ullam dolorum quae aliquam! Nihil, tempora.</span>
+                  <button class="btn bg-purple py-2 mt-12 text-2xl font-bold xl:self-start">Subscribe to unlimited courses</button>
+               </div>
             </div>
-         </div>-->
+         </div>
+         <Offer hidePrice></Offer>
+         <Footer></Footer>
       </div>
    </div>
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Slider from "@/components/Slider";
-export default {
-   components: {
-      Header,
-      Slider
-   }
-};
+   import Slick from "vue-slick";
+   import Header from "@/components/Header";
+   import Slider from "@/components/Slider";
+   import SectionTitle from "@/components/SectionTitle";
+   import Video from "@/components/Video";
+   import Offer from "@/components/Offer";
+   import Footer from "@/components/Footer";
+   export default {
+      components: {
+         Header,
+         Slider,
+         Slick,
+         SectionTitle,
+         Video,
+         Offer,
+         Footer
+      },
+      data: () => ({
+         options: {
+            dots: true,
+            autoplay: true,
+            infinity: true,
+            arrows: false,
+         }
+      })
+   };
 </script>
 
 
