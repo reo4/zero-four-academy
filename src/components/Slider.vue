@@ -55,7 +55,6 @@ export default {
          slidesToScroll: 1,
          variableWidth: true,
          centerMode: true,
-         waitForAnimate: false,
          responsive: [
             {
                breakpoint: 1024,

@@ -19,9 +19,10 @@
 
 .slick-slide a {
 	opacity: 1;
-	transition: opacity 1s;
+	transition: all 2s;
 }
 .slick-slide:not(.slick-center) a {
+	transition: all 2s;
 	opacity: .2;
 }
 

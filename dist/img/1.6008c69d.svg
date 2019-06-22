@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="170" height="170" viewBox="0 0 170 170">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#764ba2"/>
+      <stop offset="1" stop-color="#667eea"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_745" data-name="Group 745" transform="translate(-488 -2888)">
+    <circle id="Ellipse_29" data-name="Ellipse 29" cx="85" cy="85" r="85" transform="translate(488 2888)" fill="url(#linear-gradient)"/>
+    <g id="smartphone-call" transform="translate(541.666 2931.473)">
+      <path id="Path_56" data-name="Path 56" d="M50.108,0H12.962A5.643,5.643,0,0,0,7.334,5.628V77.689a5.645,5.645,0,0,0,5.628,5.63H50.108a5.642,5.642,0,0,0,5.628-5.628V5.628A5.643,5.643,0,0,0,50.108,0ZM25.593,4.056H37.477a.682.682,0,0,1,0,1.364H25.593a.682.682,0,0,1,0-1.364Zm5.942,76.449a2.815,2.815,0,1,1,2.814-2.816A2.814,2.814,0,0,1,31.535,80.505Zm20.285-7.6H11.25V8.925H51.819Z" transform="translate(0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
