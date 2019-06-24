@@ -9,6 +9,7 @@
          <Cards></Cards>
          <Offer hide-title add-line></Offer>
          <Cards></Cards>
+         <div class="divider w-full my-32"></div>
          <Offer></Offer>
       </div>
       <Footer/>

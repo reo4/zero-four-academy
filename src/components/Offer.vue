@@ -1,5 +1,5 @@
 <template>
-   <div class="flex-center py-24 text-white" :class="addLine ? '' : 'border-t border-grey-balanced'">
+   <div class="flex-center py-24 text-white">
       <div class="separator bg-green-offer mb-8" v-if="!hideTitle"></div>
       <p class="text-6xl mb-8" v-if="!hideTitle">Get the Offer</p>
       <p class="text-2xl font-light text-grey-light mb-16" v-if="!hideTitle">Lorem ipsum is simply dummy text of the printing and typesetting industry</p>

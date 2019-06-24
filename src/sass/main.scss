@@ -3,33 +3,3 @@
 @import "buttons";
 
 
-.slick-dots {
-	margin-top: 3rem;
-	position: unset;
-}
-.slick-dots li button:before{
-	color: white;
-	font-size: 16px;
-}
-
-.slick-dots li.slick-active button:before {
-	opacity: 1;
-	color: white;
-}
-
-.slick-slide a {
-	opacity: 1;
-	transition: all 2s;
-}
-.slick-slide:not(.slick-center) a {
-	opacity: .2;
-}
-
-@media (max-width: 1280px) {
-	.slick-slide a {
-		opacity: 1 !important
-	}
-}
-.plyr__progress__container{
-	width: 70% !important;
-}

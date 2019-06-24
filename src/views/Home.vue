@@ -62,7 +62,7 @@
          <SectionTitle color="purple" title="Simple & Fun"></SectionTitle> 
          <div class="container mb-32">
             <div class="flex items-center justify-between flex-col xl:flex-row mb-10 px-10 xl:items-start">
-               <div class="xl:w-1/2 mr-20">
+               <div class="xl:w-1/2 mr-20 mb-20 xl:mb-0">
                   <Video></Video>
                </div>
                <div class="flex flex-col xl:w-1/2">
@@ -72,6 +72,24 @@
                </div>
             </div>
          </div>
+         <div class="divider my-32"></div>
+         <SectionTitle color="red-light" title="Lerners & Courses"></SectionTitle>
+         <div class="bg-cover-3 flex-center">
+            <div class="flex justify-center flex-wrap">
+               <img class="up-down-animation up-down-animation-2 ml-40" src="@/assets/bubbles/green-light.svg" width="290">
+               <img class="up-down-animation up-down-animation-3 ml-32" src="@/assets/bubbles/blue.svg" width="290">
+               <img class="up-down-animation up-down-animation-1 ml-24" src="@/assets/bubbles/green-dark.svg" width="290">
+            </div>
+            <div class="flex justify-center flex-wrap">
+               <img class="up-down-animation up-down-animation-4 mr-24" src="@/assets/bubbles/purple.svg" width="290">
+               <img class="up-down-animation up-down-animation-1 mr-32" src="@/assets/bubbles/red.svg" width="290">
+               <img class="up-down-animation up-down-animation-5 mr-40" src="@/assets/bubbles/orange.svg" width="290" >
+            </div>
+            <span class="inline-block cursor-pointer mt-32">
+               <img src="@/assets/subscribe-btn.svg">
+            </span>
+         </div>         
+         <div class="divider my-32"></div>
          <Offer hidePrice></Offer>
          <Footer></Footer>
       </div>
@@ -108,3 +126,17 @@
 </script>
 
 
+<style scoped>
+   .bg-cover-3 {
+      background-image: url('../assets/bubbles/background.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+   }
+   @media (max-width: 1280px) {
+      .bg-cover-3{
+         background-size: cover;
+      }
+      
+   }
+</style>

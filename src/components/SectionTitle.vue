@@ -1,5 +1,5 @@
 <template>
-	<div class="flex-center mb-40">
+	<div class="flex-center mb-24">
 		<div class="separator mb-5" :class="'bg-' + color"></div>
 		<span class="title">{{title}}</span>
 		<span

@@ -51,6 +51,7 @@
                </ul>
             </div>
          </div>
+         <div class="divider w-full mt-32"></div>
          <Offer></Offer>
       </div>
       <Footer></Footer>

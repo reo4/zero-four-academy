@@ -1,0 +1,108 @@
+.slick-dots {
+	margin-top: 3rem;
+	position: unset;
+}
+.slick-dots li button:before{
+	color: white;
+	font-size: 16px;
+}
+
+.slick-dots li.slick-active button:before {
+	opacity: 1;
+	color: white;
+}
+
+.slick-slide a {
+	opacity: 1;
+	transition: all 2s;
+}
+.slick-slide:not(.slick-center) a {
+	opacity: .2;
+}
+
+@media (max-width: 1280px) {
+	.slick-slide a {
+		opacity: 1 !important
+	}
+}
+.plyr__progress__container{
+	width: 70% !important;
+}
+
+.up-down-animation{
+	position: relative;
+	animation-iteration-count: infinite;
+	animation-direction: alternate ;
+	animation-timing-function: ease-in-out;
+}
+
+.up-down-animation-1 {
+	animation-name: upDownOne;
+	animation-duration: 1.4s;
+	animation-delay: .5;
+	animation-direction: alternate-reverse ;
+}
+
+.up-down-animation-2 {
+	animation-name: upDownTwo;
+	animation-duration: 1.2s;
+	animation-delay: .3;
+}
+
+.up-down-animation-3 {
+	animation-name: upDownThree;
+	animation-duration: 1s;
+	animation-delay: .7;
+}
+.up-down-animation-4 {
+	animation-name: upDownFour;
+	animation-duration: .8s;
+	animation-delay: .5;
+}
+
+.up-down-animation-5 {
+	animation-name: upDownFive;
+	animation-duration: 1.8s;
+	animation-delay: .2;
+}
+
+@keyframes upDownOne {
+	from {
+		top: 10px;
+	}
+	to {
+		top: -10px;
+	}
+}
+@keyframes upDownTwo {
+	from {
+		top: 7px;
+	}
+	to {
+		top: -7px;
+	}
+}
+@keyframes upDownThree {
+	from {
+		top: 12px;
+	}
+	to {
+		top: -12px;
+	}
+}
+@keyframes upDownFour {
+	from {
+		top: 15px;
+	}
+	to {
+		top: -15px;
+	}
+}
+@keyframes upDownFive {
+	from {
+		top: 20px;
+	}
+	to {
+		top: -20px;
+	}
+}
