@@ -1,9 +1,9 @@
 <template>
    <div class="container mt-20">
       <a href="#" class="block mx-auto text-right mb-8 mr-10">
-         <span class="text-lg">show all</span>
+         <span class="text-lg">{{$t('courses.showAll')}}</span>
       </a>
-      <Slick ref="slick" :options="options">
+      <Slick ref="slick" :options="options" @init="toggleRtl">
          <a
             href="#"
             v-for="(slide , i) in slides"
@@ -11,12 +11,12 @@
             :class="[slide.cover]"
             :key="i"
          >
-            <span class="text-2xl mt-80">Lorem ipsum is simply dummy text</span>
+            <span class="text-2xl mt-80">{{slide.title}}</span>
             <CourseDetails></CourseDetails>
          </a>
       </Slick>
       <div class="flex justify-center my-24">
-         <div class="flex">
+         <div class="flex flex-row">
             <a href="#" class="text-grey-light mr-12" @click.prevent="next">
                <i class="fa fa-chevron-left fa-2x"></i>
             </a>
@@ -39,14 +39,6 @@ export default {
       Slick
    },
    data: () => ({
-      slides: [
-         { cover: "bg-cover-2" },
-         { cover: "bg-cover-3" },
-         { cover: "bg-cover-3" },
-         { cover: "bg-cover-3" },
-         { cover: "bg-cover-3" },
-         { cover: "bg-cover-3" }
-      ],
       options: {
          arrows: false,
          infinite: true,
@@ -68,12 +60,23 @@ export default {
          ]
       }
    }),
+   updated(){
+      this.$refs.slick.reSlick()
+   },
+   computed: {
+      slides(){
+         return this.$t('courses.list')
+      },
+   },
    methods: {
       next() {
          this.$refs.slick.next();
       },
       prev() {
          this.$refs.slick.prev();
+      },
+      toggleRtl(event , slick){
+         this.$i18n.locale === 'ar' ? slick.options.rtl = true : slick.options.rtl = false
       }
    }
 };

@@ -4,7 +4,7 @@
 		<span class="title">{{title}}</span>
 		<span
 		class="subheading"
-		>Lorem ipsum is simply dummy text of the printing and typesetting industry</span>
+		>{{$t('courses.description')}}</span>
 	</div>
 </template>
 

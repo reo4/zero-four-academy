@@ -15,15 +15,15 @@
          </ul>
       </div>
       <div class="action" v-if="price">
-         <button class="btn btn-danger">Subscribe Now</button>
+         <button class="btn btn-danger">{{$t('header.btn')}}</button>
          <span class="price-per-period">
             <span class="price">${{price}}</span>
-            <span class="period">/month</span>
+            <span class="period">/{{$t('plans.per')}}</span>
          </span>
-         <p class="tip text-grey-light">you will save {{saveAmount}}</p>
+         <p class="tip text-grey-light">{{$t('header.save')}} {{saveAmount}}</p>
       </div>
       <div v-else class="p-12 pt-0 text-2xl text-white">
-         <a href="#">Contact us</a>
+         <a href="#">{{$t('plans.contact')}}</a>
          <i class="fa fa-angle-right ml-2 align-middle"></i>
       </div>
    </div>

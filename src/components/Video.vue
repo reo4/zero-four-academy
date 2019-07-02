@@ -2,7 +2,7 @@
   <div>
     <a href="#" @click.prevent="open"><img src="@/assets/video.jpg"></a>
     <vue-plyr id="frame" v-click-outside="close" ref="plyr" :options="options" v-show="showFrame">
-      <div data-plyr-provider="youtube" data-plyr-embed-id="8Z1eMy2FoX4"></div>
+      <div data-plyr-provider="youtube" data-plyr-embed-id="ruKy1g5Ru8w"></div>
     </vue-plyr>
   </div>
 </template>

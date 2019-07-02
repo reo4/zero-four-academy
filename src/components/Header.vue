@@ -3,11 +3,11 @@
       <div class="container pt-10 mb-24">
          <div class="flex justify-between items-center">
             <img class="w-32" src="@/assets/logo.png">
-            <div>
-               <a href="#" class="pr-2 mr-2 border-r-2 border-white">
+            <div class="flex flex-row">
+               <a href="#" class="pr-2 mr-2 border-r-2 border-white" @click.prevent="changeLocale('ar')">
                   <span>العربية</span>
                </a>
-               <a href="#">
+               <a href="#" @click.prevent="changeLocale('en')">
                   <span>English</span>
                </a>
             </div>
@@ -34,6 +34,12 @@ export default {
       },
       headingSize: {
          default: "large"
+      }
+   },
+   methods: {
+      changeLocale(locale){
+         this.$router.push({name: this.$route.name , params: {lang: locale}})
+         this.$i18n.locale = locale
       }
    }
 };

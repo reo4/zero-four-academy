@@ -1,12 +1,12 @@
 <template>
-   <div id="description">
+   <div id="title">
       <Header badge-color="red" bottom-heading="subscribe, What you will get" heading-size="small">
          <template
             slot="bottom-details"
          >Lorem ipsum is simply dummy text of the printing and typesetting industry</template>
       </Header>
       <div class="plans-wrapper flex bg-grey-dark px-4 py-10">
-         <Plan v-for="(plan , i) in plans" v-bind="plan" :key="i"></Plan>
+         <Plan v-for="(plan , i) in planswithData" v-bind="plan" :key="i"></Plan>
       </div>
       <Footer></Footer>
    </div>
@@ -27,20 +27,26 @@ export default {
       plans: [
          {
             icon: "individual.png",
-            title: "Individual",
-            description: "Lorem ipsum dolor sit.",
-            conditions,
             price: "39.99",
             saveAmount: "1,509.92"
          },
          {
             icon: "enterprise.png",
             title: "Enterprise",
-            description: "Lorem ipsum dolor sit amet.",
-            conditions
          }
       ]
-   })
+   }),
+   computed: {
+      planswithData(){
+         let plans = this.plans.map(( v , i) => {
+            v.title = this.$t(`plans.list[${i}].title`)
+            v.description = this.$t(`plans.list[${i}].description`)
+            v.conditions = this.$t(`plans.list[${i}].conditions`)
+            return v
+         })
+         return plans
+      }
+   }
 };
 </script>
 
